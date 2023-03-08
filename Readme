@@ -1,7 +1,3 @@
-echo "# KGitbank" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/herryssong97/KGitbank.git
-git push -u origin main
+KGitbank 자바 빅데이터 과정
+
+2023.03.08-2023.09.04
