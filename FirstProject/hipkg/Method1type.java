@@ -4,62 +4,63 @@ import java.util.Scanner;
 
 public class Method1type {
 	public static void main(String[] args) {
-		// Q. 2023³âÀÌ À±³âÀÎÁö ¾Ë¾Æ³»´Â ÇÁ·Î±×·¥À» ÀÛ¼ºÇÏ½Ã¿À.
+		// Q. 2023ë…„ì´ ìœ¤ë…„ì¸ì§€ ì•Œì•„ë‚´ëŠ” í”„ë¡œê·¸ë¨ì„ ì‘ì„±í•˜ì‹œì˜¤.
 
 		/*
-		 * À±³â : 365.2422ÀÏ
-		 * 0.2422*4 = 0.9688 = ¾à 1ÀÏ 
-		 * 100³â¿¡ Æò³âÀ¸·Î
-		 * 400³â¿¡ 1¹øÀº À±³âÀ¸·Î
+		 * ìœ¤ë…„ : 365.2422ì¼
+		 * 0.2422*4 = 0.9688 = ì•½ 1ì¼ 
+		 * 100ë…„ì— í‰ë…„ìœ¼ë¡œ
+		 * 400ë…„ì— 1ë²ˆì€ ìœ¤ë…„ìœ¼ë¡œ
 		 * 
-		 * À±³âÀº?
-		 * 4·Î ³ª´©¾î ¶³¾îÁö°í
-		 * 100À¸·Î ³ª´©¾î ¶³¾îÁöÁö ¾Ê°Å³ª
-		 * 400À¸·Î ³ª´©¾î ¶³¾îÁö´Â ÇØ
+		 * ìœ¤ë…„ì€?
+		 * 4ë¡œ ë‚˜ëˆ„ì–´ ë–¨ì–´ì§€ê³ 
+		 * 100ìœ¼ë¡œ ë‚˜ëˆ„ì–´ ë–¨ì–´ì§€ì§€ ì•Šê±°ë‚˜
+		 * 400ìœ¼ë¡œ ë‚˜ëˆ„ì–´ ë–¨ì–´ì§€ëŠ” í•´
 		 */		
 //		year();
 //		passyear(2021);
 //		System.out.println(nextyear());
 		String a = nextyear();
 		System.out.println(a);
-		// ¤¤ a = "À±³âÆò³â Ã³¸® ³¡";
+		// ã„´ a = "ìœ¤ë…„í‰ë…„ ì²˜ë¦¬ ë";
 		
 	}// main end
 	
 	private static String nextyear() {
 		Scanner sc = new Scanner(System.in);
-		String y = "Æò³â";
+		String y = "í‰ë…„";
 		
-		System.out.print("³âµµ¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+		System.out.print("ë…„ë„ë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
 		int year = sc.nextInt();
 		
 		if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
-			y = "À±³â";
+			y = "ìœ¤ë…„";
 		} 
-//		System.out.printf("%s³âÀº %sÀÔ´Ï´Ù.\n", year, y);
-		return "À±³âÆò³â Ã³¸® ³¡";
+//		System.out.printf("%së…„ì€ %sì…ë‹ˆë‹¤.\n", year, y);
+		return "ìœ¤ë…„í‰ë…„ ì²˜ë¦¬ ë";
+//		return y;
 	}
 
 	public static void year() {
 
 		Scanner sc = new Scanner(System.in);
-		String y = "Æò³â";
+		String y = "í‰ë…„";
 		
-		System.out.print("³âµµ¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+		System.out.print("ë…„ë„ë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
 		int year = sc.nextInt();
 		
 		if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
-			y = "À±³â";
+			y = "ìœ¤ë…„";
 		} 
-		System.out.printf("%s³âÀº %sÀÔ´Ï´Ù.", year, y);
+		System.out.printf("%së…„ì€ %sì…ë‹ˆë‹¤.", year, y);
 	}
 	
 	public static void passyear(int i) {
-		String y = "Æò³â";
+		String y = "í‰ë…„";
 		
 		if (i % 4 == 0 && i % 100 != 0 || i % 400 == 0) {
-			y = "À±³â";
+			y = "ìœ¤ë…„";
 		} 
-		System.out.printf("%s³âÀº %sÀÔ´Ï´Ù.", i, y);
+		System.out.printf("%së…„ì€ %sì…ë‹ˆë‹¤.", i, y);
 	}
 }
